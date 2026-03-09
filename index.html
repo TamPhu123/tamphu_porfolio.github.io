@@ -174,7 +174,7 @@ footer{border-top:2px solid var(--text);padding:2rem 3rem;display:flex;justify-c
   <div class="hero-left">
     <div class="hero-eyebrow fade-up">Applied Mathematics · Computer Science · Fulbright University Vietnam</div>
     <h1 class="fade-up d1">
-      <span class="hi">Hi, I'm </span>
+      <span class="hi">Hi, I'm</span>
       Tran Thi<br><span class="hl">Tam Phu</span>
     </h1>
     <p class="hero-sub fade-up d2">
@@ -215,7 +215,7 @@ footer{border-top:2px solid var(--text);padding:2rem 3rem;display:flex;justify-c
   </div>
   <div class="about-grid">
     <div class="about-text">
-      <p>I'm a student at <strong>Fulbright University Vietnam</strong>, majoring in 
+      <p>I'm a first-year student at <strong>Fulbright University Vietnam</strong>, majoring in 
       <strong>Applied Mathematics</strong> with a minor in Computer Science — on a full President's Scholarship.</p>
       <p>My projects span statistical analysis, machine learning, AI product design, financial 
       optimization, and mathematical theory. I'm drawn to problems where <strong>rigorous quantitative 
@@ -389,8 +389,8 @@ footer{border-top:2px solid var(--text);padding:2rem 3rem;display:flex;justify-c
               <li>Built visualizations (histograms, box plots, scatter plots) to explore distributions</li>
               <li>Ran one-sample t-test comparing doctors' sleep against the recommended 7 hours</li>
               <li>Conducted two-sample hypothesis testing: male vs. female stress levels</li>
-          
-              <li>Computed correlation (r = −0.566) between sleep and stress</li>
+              <li>Applied one-way ANOVA + Fisher's LCD post-hoc across 3 age groups</li>
+              <li>Computed Pearson correlation (r = −0.566) between sleep and stress</li>
             </ul>
           </div>
           <div class="ep-section">
@@ -424,7 +424,7 @@ footer{border-top:2px solid var(--text);padding:2rem 3rem;display:flex;justify-c
               <li>Applied mean-centering normalization to remove rating bias across users</li>
               <li>Computed cosine similarity between book vectors to find nearest neighbors</li>
               <li>Filtered to users with 10+ ratings and books with 4+ ratings for data quality</li>
-          
+              <li>Deployed the full pipeline as an interactive web application</li>
             </ul>
           </div>
           <div class="ep-section">
@@ -441,7 +441,7 @@ footer{border-top:2px solid var(--text);padding:2rem 3rem;display:flex;justify-c
       <div class="pcard-body">
         <div class="pcard-meta"><span class="pcard-course">Probability</span><span class="pcard-num">03</span></div>
         <div class="pcard-title">Stock Price Jump-Diffusion Model</div>
-        <p class="pcard-desc">Probabilistic model separating normal stock movements from sudden jumps — with 200 Monte Carlo simulations and an interactive Streamlit app.</p>
+        <p class="pcard-desc">Probabilistic model separating normal stock movements from sudden jumps — with 5,000 Monte Carlo simulations and an interactive Streamlit app.</p>
         <div class="tag-row">
           <span class="tag red">Monte Carlo</span><span class="tag red">Stochastic Model</span><span class="tag red">Python</span><span class="tag red">Streamlit</span>
         </div>
@@ -457,7 +457,7 @@ footer{border-top:2px solid var(--text);padding:2rem 3rem;display:flex;justify-c
               <li>Computed daily log-returns and detected jump days using a 3-sigma threshold</li>
               <li>Classified jumps as "crisis" or "regular" using Modified Z-scores and MAD</li>
               <li>Estimated diffusion parameters (μ, σ²) separately from non-jump returns</li>
-              <li>Built a Monte Carlo engine generating 200 price paths with confidence intervals</li>
+              <li>Built a Monte Carlo engine generating 5,000 price paths with confidence intervals</li>
               <li>Deployed as an interactive Streamlit app for any stock ticker</li>
             </ul>
           </div>
@@ -604,9 +604,10 @@ footer{border-top:2px solid var(--text);padding:2rem 3rem;display:flex;justify-c
             <div class="ep-label">What I did</div>
             <ul class="ep-list">
               <li>Researched non-pharmacological Alzheimer's interventions to define the problem space</li>
-              <li>Designed the full product: voice pipeline, book library, user flow</li>
+              <li>Designed the full product: voice pipeline (Whisper → FastSpeech 2 → HiFi-GAN), book library, user flow</li>
               <li>Built responsible AI framework: consent agreements, access controls, psychological risk mitigation</li>
               <li>Developed a simulated website prototype demonstrating the core user journey</li>
+              <li>Pitched to judges at GDGOC Hackathon — reached Top 12 from 100+ teams</li>
             </ul>
           </div>
           <div class="ep-section">
@@ -629,8 +630,9 @@ footer{border-top:2px solid var(--text);padding:2rem 3rem;display:flex;justify-c
     <p>I'm actively looking for internships and competitions in software engineering, 
     data science, and AI. If you're building something meaningful, I'd love to connect.</p>
     <div class="contact-links">
-      <a href="mailto:phu.tran.240164@student.fulbright.edu.vn" class="btn btn-primary">Email me</a>
+      <a href="/cdn-cgi/l/email-protection#5c2c342972282e3d32726e686c6d6a681c3a29303e2e353b342872393829722a32" class="btn btn-primary">Email me</a>
       <a href="https://www.linkedin.com/in/tranthitamphu180506/" class="btn btn-ghost" target="_blank">LinkedIn</a>
+      <a href="https://github.com/yourgithub" class="btn btn-ghost" target="_blank">GitHub</a>
     </div>
   </div>
 </section>
@@ -640,17 +642,11 @@ footer{border-top:2px solid var(--text);padding:2rem 3rem;display:flex;justify-c
   <span>Built with ♥ and math · Fulbright University Vietnam</span>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function toggle(btn) {
   const panel = btn.nextElementSibling;
   const arrow = btn.querySelector('.arrow');
   const isOpen = panel.classList.contains('open');
   panel.classList.toggle('open', !isOpen);
   arrow.textContent = isOpen ? '▾' : '▴';
-  btn.style.background = isOpen ? '' : 'var(--text)';
-  btn.style.color = isOpen ? '' : '#fff';
-  btn.style.borderColor = isOpen ? '' : 'var(--text)';
-}
-</script>
-</body>
-</html>
+  btn.style.bac
